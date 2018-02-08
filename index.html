@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Test website for EPPL">
+    <meta name="author" content="EPPL">
+    <title>EPPL Daytona Beach Spacecraft Controller | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Desktop.json", { onProgress: UnityProgress });
+    </script>
+    <!--<link rel="stylesheet" href="./css/font-awesome.min.css">-->
+
+    <style>
+        html, body {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bar {
+            height: 90px;
+            background: #999999;
+        }
+    </style>
+
+    <!--<script>
+        (function (d) {
+            var iframe = d.body.appendChild(d.createElement('iframe')),
+                doc = iframe.contentWindow.document;
+
+            // style the iframe with some CSS
+            iframe.style.cssText = "position:absolute;width:200px;height:100px;left:0px;";
+
+            doc.open().write('<body onload="' +
+                'var d = document;d.getElementsByTagName(\'head\')[0].' +
+                'appendChild(d.createElement(\'script\')).src' +
+                '=\'\/path\/to\/file\'">');
+
+            doc.close(); //iframe onload event happens
+
+        })(document);
+    </script>-->
+
+</head>
+
+	<body>
+		<header>
+			Test site for Simulink Unity
+		</header>
+
+		<section id="menu">
+
+		</section>
+
+        <section id="unity">
+            <div class="webgl-content">
+                <div id="gameContainer" style="width: 960px; height: 600px"></div>
+                <div class="footer">
+                    <div class="webgl-logo"></div>
+                    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                    <div class="title">VR-Demo-29-Mars</div>
+                </div>
+            </div>
+
+        </section>
+
+		<section id="lab view">
+
+		</section>
+
+		<section id="matlab output">
+
+		</section>
+
+		<!--<iframe src="file:///C:/Users/Student%20EPPL%20Guest/Desktop/index.html" style="border:0px #000000 none;" name="Spacecraft Controller"
+		scrolling="no" frameborder="1" marginheight="px" marginwidth="320px" height="320px"
+		width=""480px"></iframe>-->
+
+		<footer>
+			<p>Embry-Riddle, Copyright &copy; 2018</p>
+		</footer>
+	</body>
+</html>
